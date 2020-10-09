@@ -1,6 +1,8 @@
 <h2 class="page-header">Editar Libro</h2>
 <form action="/books/<%= book.id %>?_method=PUT"  method="POST">
   <%- include("_form_fields") %>
-  <a href="/books">Cancelar</a>
-  <button type="submit">Aceptar</button>
+    <div class="form-row form-row-end btn-row">
+      <a class="btn btn-danger" href="/books">Cancelar</a>
+      <button class="btn btn-primary" type="submit">Aceptar</button>
+    </div>
 </form>
